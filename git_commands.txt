@@ -2,9 +2,12 @@ git commands:
 
 	git init
 	git status
-	git add <<file_name>>
+	git add <<file_name>> --->> to add files in a folder use git add .
 	git commit
+---->> you have to quit the editor so that the control comes back to the git bash else it will still continue to ask for more commit messages and nothing will proceed
 	
+	each time u make changes to the code you have add all files and then do commit.
+
 	git log
 	git log --graph 
 	git log --graph --oneline
