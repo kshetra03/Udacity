@@ -6,7 +6,19 @@ git commands:
 	git commit
 ---->> you have to quit the editor so that the control comes back to the git bash else it will still continue to ask for more commit messages and nothing will proceed
 	
-	each time u make changes to the code you have add all files and then do commit.
+each time u make changes to the code you have add all files and then do commit.
+
+To undo a git add -- command: git reset
+
+Work with .gitignore -- how to ignore files and folders that you dont want to check-in e.g. files and folders created by IDEs ? 
+Steps: 
+	- create a .gitignore file in the root directory. Correct way to create the same is use command "touch .gitignore" from git bash
+	- add the desired files and folders to the .gitignore file that you want to ignore
+	- e.g - for Intellij IDEA - it creates out folder to store the .class files
+		To ignore this write "out/*" in the gitingnore file --> this will ignore the out folder with all its files.
+		we also need to remove all the .iml files that are implicitly created by IDE
+		Type *.iml in the .gitignore file
+
 
 How to fully delete a git repository created with init?
 	Git keeps all of its files in the .git directory. Just remove that one and init again.
