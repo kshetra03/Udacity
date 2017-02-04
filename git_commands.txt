@@ -8,6 +8,10 @@ git commands:
 	
 	each time u make changes to the code you have add all files and then do commit.
 
+How to fully delete a git repository created with init?
+	Git keeps all of its files in the .git directory. Just remove that one and init again.
+	You may not find it as, it's because it is hidden.
+
 	git log
 	git log --graph 
 	git log --graph --oneline
